@@ -1,5 +1,5 @@
 FROM centos
-MAINTAINER Hiroharu Tanaka <htanaka@fusioncom.co.jp>
+MAINTAINER Hiroharu Tanaka <hiroharu8864@gol.com>
 
 RUN yum install -y passwd openssh openssh-server openssh-clients sudo
 # install for chef
