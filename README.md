@@ -29,6 +29,14 @@ Test Chef Recipe
 knife solo cook 'docker vm's IP Address'
 ```
 
+Modification
+-----
+From Centosで通常起動した後、chefのRecipeからiptablesが停止できなかったため、以下修正している。
+
+```
+RUN sed -ri "s/^IPTABLES_MODULES_UNLOAD=\"yes\"/IPTABLES_MODULES_UNLOAD=\"no\"/" /etc/sysconfig/iptables-config
+```
+
 License and Authors
 -------------------
 Authors: Hiroharu Tanaka
