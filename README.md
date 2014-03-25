@@ -1,7 +1,7 @@
 sshd_centos_docker3
 ===================
 
-chefの試験を行うためのSSHとchefがインストールされたDockerfile
+chefの試験を行うためのSSHとchefがインストールされたCentOSのDockerfile
 
 PreRequirement
 -----
@@ -22,3 +22,13 @@ Host Docker IP Address
   PasswordAuthentication no  
   IdentitiesOnly yes  
 ```
+
+Test Chef Recipe
+-----
+```
+knife solo cook 'docker vm's IP Address'
+```
+
+License and Authors
+-------------------
+Authors: Hiroharu Tanaka
